@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color: white;
+    position: relative;
+}
+body.dark{
+    background-color: black;
+
+}
+.flex{
+    display:flex;
+}
+.half{
+    /* background-color: orange; */
+    background-image:url(/asset/freepik__the-style-is-candid-image-photography-with-natural__31514.png) ;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+}
+nav{
+    background-color: black;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+
+    
+}
+nav div a{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: white;
+}
+nav div a:hover{
+    color: orange;
+}
+.logo{
+    width: 4rem;
+    height: auto;
+    /* padding-left: 0.5rem; */
+}
+.toggle{
+    position: relative;
+    border-radius: 100px;
+    height:1.5rem;
+    width: 3rem;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+ 
+}
+.toggle::before{
+    content: '';
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background: orange;
+    border-radius: 50%;
+    top: 50%;
+    left:0.4rem;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.toggle.active::before{
+    left: calc(100% - 1rem - 0.4rem);
+
+}
+.herotext{
+   font-size: 3.2rem;
+   font-weight: bold;
+    color: orange;
+    padding: 1.5rem;
+    margin-top: 40rem;
+}
+.herotext span{
+    color: white;
+}
+.sndhalf{
+    background-color: white;
+    overflow-y: scroll;
+    height: 80vh;
+    margin: auto 0 auto;
+    width: 60%;
+    padding: 0 5rem;
+}
+.sndhalf.dark{
+    background-color: black;
+    color: white;
+}
+.title, .title3{
+    font-size: 4rem;
+}
+.description{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+#blog{
+    padding: 2rem 0;
+}
+.title2{
+    font-size: 2.5rem;
+}
+.title2.dark{
+    color:#7c7d7e;
+}
+.description2{
+    font-size: 1.5rem;
+    padding: 0.5rem 0 2rem 0;
+}
+.subtitle, .subtitle2, .subtitle3{
+    color: orange;
+}
+.title3{
+    padding-bottom: 2rem;
+}
+.content, .content2{
+    padding: 1.5rem 0;
+}
+.content3{
+    padding: 1.5rem 0 0 0;
+}
+.content a, .content2 a{
+    text-decoration: none;
+    font-style: italic;
+    color: orange;
+}
+.content3 ul{
+    margin: 2rem;
+}
+#Journey, #Challenges, #Goals{
+    margin: 3rem 0;
+}
+.email{
+    width: 45rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.email.dark{
+    background-color: black;
+    color: white;
+    border:1px solid white;
+}
+.message{
+    width:50rem ;
+    height: 6rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.message.dark{
+    background-color: black;
+    color: white;
+    border:1px solid white;
+}
+#contact{
+    padding-bottom: 2rem;
+}
+.Send{
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    margin-top: 2rem;
+    border: 0;
+    border-radius: 25%;
+}
+.Send.dark{
+    background-color: white;
+    color: black;
+}
+.Send:hover{
+    background-color: orange;
+}
+footer{
+    position: absolute;
+    background-color: black;
+    margin: 0 auto 10vh auto;
+    height: 4rem;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    top: 94.2vh;
+}
